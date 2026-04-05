@@ -239,6 +239,27 @@
               >
                 cristianhdz.t@outlook.com
               </a>
+              <span class="text-zinc-200 dark:text-zinc-700">|</span>
+              <a
+                href="./CV_CRISTIAN_ALEJANDRO_HERNANDEZ_TREVINO_FULLSTACK.pdf"
+                download
+                class="flex items-center gap-2 text-sm text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
+              >
+                <svg
+                  class="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                  />
+                </svg>
+                Resume
+              </a>
             </div>
           </div>
           <div class="flex-shrink-0 animate-fade-up delay-2">
@@ -284,7 +305,7 @@
                   <h2
                     class="text-base font-medium text-zinc-900 dark:text-zinc-50"
                   >
-                    Triploom
+                    Triploom - 2026
                   </h2>
                   <span
                     class="tag px-2 py-0.5 rounded-full bg-blue-50 dark:bg-blue-950 text-blue-600 dark:text-blue-400 border border-blue-100 dark:border-blue-900"
@@ -383,7 +404,7 @@
                 <h2
                   class="text-base font-medium text-zinc-900 dark:text-zinc-50 mb-1"
                 >
-                  TaskFlow
+                  TaskFlow - 2025/2026
                 </h2>
                 <p
                   class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed"
@@ -481,7 +502,7 @@
                   <h2
                     class="text-base font-medium text-zinc-900 dark:text-zinc-50"
                   >
-                    MiPastelería
+                    MiPastelería - 2026
                   </h2>
                   <span
                     class="tag px-2 py-0.5 rounded-full bg-zinc-50 dark:bg-zinc-900 text-zinc-500 dark:text-zinc-400 border border-zinc-200 dark:border-zinc-700"
@@ -547,33 +568,112 @@
         class="border-t border-zinc-100 dark:border-zinc-800 pt-12"
       >
         <p
-          class="mono text-xs text-zinc-400 dark:text-zinc-500 uppercase tracking-widest mb-4"
+          class="mono text-xs text-zinc-400 dark:text-zinc-500 uppercase tracking-widest mb-2"
         >
           Contact
         </p>
-        <p class="text-zinc-500 dark:text-zinc-400 mb-6 leading-relaxed">
+        <p class="text-zinc-500 dark:text-zinc-400 mb-8 leading-relaxed">
           Looking for a junior full-stack role — remote or in Monterrey /
           Matamoros. Open to freelance projects too.
         </p>
-        <a
-          href="mailto:cristianhdz.t@outlook.com"
-          class="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-zinc-200 dark:border-zinc-700 text-sm text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors"
+
+        <form
+          id="contact-form"
+          action="https://formspree.io/f/mqeggwak"
+          method="POST"
+          class="flex flex-col gap-4"
         >
-          <svg
-            class="w-4 h-4"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="1.5"
-              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+          <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <div class="flex flex-col gap-1.5">
+              <label
+                for="name"
+                class="mono text-xs text-zinc-400 dark:text-zinc-500 uppercase tracking-widest"
+                >Name</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="John Smith"
+                class="px-3 py-2.5 rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-sm text-zinc-800 dark:text-zinc-200 placeholder-zinc-400 dark:placeholder-zinc-600 focus:outline-none focus:ring-1 focus:ring-zinc-400 dark:focus:ring-zinc-500 transition-colors"
+              />
+            </div>
+            <div class="flex flex-col gap-1.5">
+              <label
+                for="email"
+                class="mono text-xs text-zinc-400 dark:text-zinc-500 uppercase tracking-widest"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="john@company.com"
+                class="px-3 py-2.5 rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-sm text-zinc-800 dark:text-zinc-200 placeholder-zinc-400 dark:placeholder-zinc-600 focus:outline-none focus:ring-1 focus:ring-zinc-400 dark:focus:ring-zinc-500 transition-colors"
+              />
+            </div>
+          </div>
+          <div class="flex flex-col gap-1.5">
+            <label
+              for="position"
+              class="mono text-xs text-zinc-400 dark:text-zinc-500 uppercase tracking-widest"
+              >Position / Company
+              <span class="normal-case text-zinc-300 dark:text-zinc-600"
+                >(optional)</span
+              ></label
+            >
+            <input
+              type="text"
+              id="position"
+              name="position"
+              placeholder="e.g. Frontend Developer at Acme Co."
+              class="px-3 py-2.5 rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-sm text-zinc-800 dark:text-zinc-200 placeholder-zinc-400 dark:placeholder-zinc-600 focus:outline-none focus:ring-1 focus:ring-zinc-400 dark:focus:ring-zinc-500 transition-colors"
             />
-          </svg>
-          cristianhdz.t@outlook.com
-        </a>
+          </div>
+          <div class="flex flex-col gap-1.5">
+            <label
+              for="message"
+              class="mono text-xs text-zinc-400 dark:text-zinc-500 uppercase tracking-widest"
+              >Message</label
+            >
+            <textarea
+              id="message"
+              name="message"
+              required
+              rows="4"
+              placeholder="Tell me about the role or project..."
+              class="px-3 py-2.5 rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-sm text-zinc-800 dark:text-zinc-200 placeholder-zinc-400 dark:placeholder-zinc-600 focus:outline-none focus:ring-1 focus:ring-zinc-400 dark:focus:ring-zinc-500 transition-colors resize-none"
+            ></textarea>
+          </div>
+          <div class="flex items-center justify-between gap-4">
+            <p class="text-xs text-zinc-400 dark:text-zinc-600">
+              or email me at
+              <a
+                href="mailto:cristianhdz.t@outlook.com"
+                class="text-zinc-500 dark:text-zinc-400 hover:underline"
+                >cristianhdz.t@outlook.com</a
+              >
+            </p>
+            <button
+              type="submit"
+              id="submit-btn"
+              class="flex-shrink-0 px-5 py-2.5 rounded-lg bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 text-sm font-medium hover:bg-zinc-700 dark:hover:bg-zinc-300 transition-colors"
+            >
+              Send message
+            </button>
+          </div>
+          <p
+            id="form-success"
+            class="hidden text-sm text-green-600 dark:text-green-400 mono"
+          >
+            Message sent — I'll get back to you soon.
+          </p>
+          <p id="form-error" class="hidden text-sm text-red-500 mono">
+            Something went wrong. Please try again.
+          </p>
+        </form>
       </section>
     </main>
 
@@ -637,6 +737,37 @@
         localStorage.setItem("theme", isDark ? "light" : "dark");
         applyTheme(!isDark);
       });
+      const form = document.getElementById("contact-form");
+      if (form) {
+        form.addEventListener("submit", async function (e) {
+          e.preventDefault();
+          const btn = document.getElementById("submit-btn");
+          const success = document.getElementById("form-success");
+          const error = document.getElementById("form-error");
+          btn.textContent = "Sending...";
+          btn.disabled = true;
+          try {
+            const res = await fetch(form.action, {
+              method: "POST",
+              body: new FormData(form),
+              headers: { Accept: "application/json" },
+            });
+            if (res.ok) {
+              form.reset();
+              success.classList.remove("hidden");
+              error.classList.add("hidden");
+              btn.textContent = "Sent!";
+            } else {
+              throw new Error();
+            }
+          } catch {
+            error.classList.remove("hidden");
+            success.classList.add("hidden");
+            btn.textContent = "Send message";
+            btn.disabled = false;
+          }
+        });
+      }
     </script>
   </body>
 </html>
